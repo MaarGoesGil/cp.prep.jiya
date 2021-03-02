@@ -81,12 +81,13 @@ function buscaDestruye(arreglo, num) {
   // Ej: buscaDestruye([1, 2, 3, 4, 1], 1) devuelve => [2, 3, 4]
   //
   // Tu código aca:
+  for (j = 0 ; j < arreglo.length ; j++) { 
+    if ( arreglo[j] === num)  {
+       arreglo.splice(j,1)   };}
   for (i = 0 ; i < arreglo.length ; i++) { 
-    if ( arreglo[i] === num ){
-     arreglo.splice(i,1)}
-    } 
-    return arreglo ;
-  
+    if ( arreglo[i] === num)  {
+       arreglo.splice(i,1)   };
+  } return arreglo ;
 }
 
 function sumarElTipo(arreglo) {
@@ -186,9 +187,8 @@ function mapear() {
   // numeros.mapear(function(numero) {
   //   return numero + 1;
   // }) devuelve [2, 3, 4, 5]
-
   // Tu código aca:
-  
+
 }
 
 // No modificar nada debajo de esta línea
@@ -202,5 +202,4 @@ module.exports = {
   stringMasLarga,
   sumarElTipo,
   crearClaseEmprendedor,
-  mapear
-};
+  mapear } 
